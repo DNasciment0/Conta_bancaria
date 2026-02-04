@@ -1,6 +1,6 @@
-import leia from "readline-sync";
 import { colors } from "./src/util/Colors";
 import { Conta } from "./src/model/Conta";
+import { Input } from "./src/util/Input";
 
 export function main() {
   let opcao: number;
@@ -48,7 +48,7 @@ export function main() {
 
     console.log("Entre com a opção desejada: ");
 
-    opcao = leia.questionInt("");
+    opcao = Input.questionInt("");
 
     c1.visualizar();
 
@@ -65,6 +65,9 @@ export function main() {
     switch (opcao) {
       case 1:
         console.log(colors.fg.whitestrong, "\n\nCriar Conta\n\n", colors.reset);
+        //console.log("Digite um texto com acentos: ");
+        //let teste = Input.question("");
+        //console.log(teste);
         keyPress();
         break;
       case 2:
@@ -138,7 +141,7 @@ export function sobre(): void {
 function keyPress(): void {
   console.log(colors.reset, "");
   console.log("\nPressione enter para continuar...");
-  leia.prompt();
+  Input.prompt();
 }
 
 main();
