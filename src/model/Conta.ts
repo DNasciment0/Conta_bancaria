@@ -110,8 +110,8 @@ export class Conta {
   //Métodos Auxiliares
 
   public sacar(valor: number): boolean {
-    if (valor > this._saldo) {
-      console.log(colors.fg.red, "Saldo Insuficiente!!!", colors.reset);
+    if (valor <= 0) {
+      console.log(colors.fg.red, "O valor deve ser positivo", colors.reset);
       return false;
     }
 
@@ -149,7 +149,7 @@ export class Conta {
     console.log(`Número da conta: ${this._numero}`);
     console.log(`Número da agencia: ${this._agencia}`);
     console.log(`Nome da titular: ${this._titulo}`);
-    console.log(`Tipo da conta: ${this.tipo}`);
-    console.log(`Saldo da conta:${this._saldo}`);
+    console.log(`Tipo da conta: ${tipo}`);
+    console.log(`Saldo da conta:${this._saldo.toFixed(2)}`);
   }
 }

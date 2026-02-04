@@ -12,7 +12,7 @@ export function main() {
   // Testes do Método Sacar
   console.log("Sacar 100,00: ", c1.sacar(100.0));
   console.log("Sacar 200000,00: ", c1.sacar(2000000.0));
-  console.log("Sacar 00,00: ", c1.sacar(0.0));
+  console.log("Sacar 0.00: ", c1.sacar(0.0));
 
   // Testes do Método Depositar
   console.log("Depositar -10.00: ");
