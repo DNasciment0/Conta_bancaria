@@ -1,27 +1,33 @@
 import { colors } from "./src/util/Colors";
 import { Conta } from "./src/model/Conta";
 import { Input } from "./src/util/Input";
+import { ContaCorrente } from "./src/model/ContaCorrente";
+import { ContaPoupanca } from "./src/model/ContaPoupanca";
 
 export function main() {
   let opcao: number;
-  // Instanciar Objetos da Classe Conta
-  const c1 = new Conta(1, 1234, "Sofia", 1, 100000.0);
 
-  c1.visualizar();
+  // Testes corrente
 
-  // Testes do Método Sacar
-  console.log("Sacar 100,00: ", c1.sacar(100.0));
-  console.log("Sacar 200000,00: ", c1.sacar(2000000.0));
-  console.log("Sacar 0.00: ", c1.sacar(0.0));
+  const cc1 = new ContaCorrente(2, 5678, "Bianca", 1, 200000.0, 2000.0);
+  cc1.visualizar();
 
-  // Testes do Método Depositar
-  console.log("Depositar -10.00: ");
-  c1.depositar(-10.0);
-
+  console.log("Sacar 1000,00: ", cc1.sacar(1000.0));
+  console.log("Sacar 200000,00: ", cc1.sacar(200000.0));
   console.log("Depositar 500.00: ");
-  c1.depositar(500.0);
+  cc1.depositar(500.0);
+  cc1.visualizar();
 
-  c1.visualizar();
+  // Testes poupanca
+
+  const cp1 = new ContaPoupanca(1, 2344, "Pedro", 2, 100000.0, 27);
+  cp1.visualizar();
+
+  console.log("Sacar 1000,00: ", cp1.sacar(1000.0));
+  console.log("Sacar 400000,00: ", cp1.sacar(40000.0));
+  console.log("Depositar 500.00: ");
+  cp1.depositar(500.0);
+  cp1.visualizar();
 
   while (true) {
     console.log(
@@ -50,7 +56,7 @@ export function main() {
 
     opcao = Input.questionInt("");
 
-    c1.visualizar();
+    // c1.visualizar();
 
     if (opcao == 9) {
       console.log(
