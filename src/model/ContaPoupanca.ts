@@ -2,7 +2,7 @@ import { colors } from "../util/Colors";
 import { Conta } from "./Conta";
 
 export class ContaPoupanca extends Conta {
-  private _diadoaniversio: number;
+  private _aniversario: number;
 
   constructor(
     numero: number,
@@ -10,22 +10,22 @@ export class ContaPoupanca extends Conta {
     titulo: string,
     tipo: number,
     saldo: number,
-    diadoaniversio: number,
+    aniversario: number,
   ) {
     super(numero, agencia, titulo, tipo, saldo);
-    this._diadoaniversio = diadoaniversio;
+    this._aniversario = aniversario;
   }
 
-  public get diadoaniversio(): number {
-    return this._diadoaniversio;
+  public get aniversario(): number {
+    return this._aniversario;
   }
 
-  public set diadoaniversio(value: number) {
-    this._diadoaniversio = value;
+  public set aniversario(value: number) {
+    this._aniversario = value;
   }
 
   public visualizar(): void {
     super.visualizar();
-    console.log(`Dia do aniversário da Conta: ${this._diadoaniversio}`);
+    console.log(`Dia do aniversário da Conta: ${this._aniversario}`);
   }
 }
