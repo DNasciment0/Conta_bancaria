@@ -24,7 +24,7 @@ export function main() {
   cp1.visualizar();
 
   console.log("Sacar 1000,00: ", cp1.sacar(1000.0));
-  console.log("Sacar 400000,00: ", cp1.sacar(40000.0));
+  console.log("Sacar 50000,00: ", cp1.sacar(50000.0));
   console.log("Depositar 500.00: ");
   cp1.depositar(500.0);
   cp1.visualizar();
@@ -56,8 +56,6 @@ export function main() {
 
     opcao = Input.questionInt("");
 
-    // c1.visualizar();
-
     if (opcao == 9) {
       console.log(
         colors.fg.greenstrong,
@@ -71,9 +69,6 @@ export function main() {
     switch (opcao) {
       case 1:
         console.log(colors.fg.whitestrong, "\n\nCriar Conta\n\n", colors.reset);
-        //console.log("Digite um texto com acentos: ");
-        //let teste = Input.question("");
-        //console.log(teste);
         keyPress();
         break;
       case 2:
