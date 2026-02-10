@@ -213,7 +213,7 @@ function atualizarConta(): void {
   const conta = contas.buscarNoArray(numero);
 
   if (conta !== null) {
-    // Guarda os valores atuais da conta
+    // Guarda os  valores atuais da conta
     let agencia: number = conta.agencia;
     let titular: string = conta.titulo;
     const tipo: number = conta.tipo;
