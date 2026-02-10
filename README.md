@@ -250,7 +250,7 @@ Este projeto está sob licença **MIT** — livre para uso educacional e profiss
 
 
 
-**José — Desenvolvedor Full Stack**
+**Daniel — Desenvolvedor Full Stack**
 
 🔗 **GitHub:** https://github.com/DNasciment0
 
