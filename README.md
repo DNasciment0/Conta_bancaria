@@ -250,10 +250,10 @@ Este projeto está sob licença **MIT** — livre para uso educacional e profiss
 
 
 
-**José — Desenvolvedor Full Stack**
+**Daniel — Desenvolvedor Full Stack**
 
-🔗 **GitHub:** https://github.com/jrs-neto
+🔗 **GitHub:** https://github.com/DNasciment0
 
-🔗 **LinkedIn:** https://www.linkedin.com/in/jrodrigues-neto/
+
 
 Projeto desenvolvido para **aprendizado contínuo**, **demonstração técnica** e **portfólio profissional**.
