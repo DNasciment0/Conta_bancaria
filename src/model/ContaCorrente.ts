@@ -1,4 +1,5 @@
 import { colors } from "../util/Colors";
+import { formatarMoeda } from "../util/Currency";
 import { Conta } from "./Conta";
 
 export class ContaCorrente extends Conta {
@@ -39,7 +40,7 @@ export class ContaCorrente extends Conta {
   // Método visualizar sobrescrito(Polimorfismo)
   public visualizar(): void {
     super.visualizar();
-    console.log(`Limite da conta: ${this._limite.toFixed(2)}`);
+    console.log(`Limite da conta: ${formatarMoeda(this._limite)}`);
 
     // Método sacar sabrescrito
   }
